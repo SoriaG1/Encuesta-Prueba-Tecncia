@@ -1,0 +1,34 @@
+<form [formGroup]="formUser" (submit)="onSubmitForm()">
+  <div class="row" *ngIf="isSignUp == true">
+    <mat-form-field appearance="outline" class="col-md-6 mb-4">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="Your Name" formControlName="firstName">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="col-md-6 mb-4">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Your Last Name" formControlName="lastName">
+    </mat-form-field>
+  </div>
+
+  <!-- Username input -->
+  <mat-form-field appearance="outline" class="col-md-12 mb-4">
+    <mat-label>Username</mat-label>
+    <input type="username" matInput placeholder="Your Username" formControlName="username">
+  </mat-form-field>
+
+  <!-- Password input -->
+  <div  class="col-md-12 mb-4">
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Your Password" formControlName="password">
+    </mat-form-field>
+  </div>
+
+  <!-- Submit button -->
+  <div class="col-md-12 mb-4">
+    <button type="submit" mat-raised-button class="w-100" color="primary" [disabled]="formUser.invalid">
+      {{ isSignUp ? 'Sign Up' : 'Sign In' }}
+    </button>
+  </div>
+</form>

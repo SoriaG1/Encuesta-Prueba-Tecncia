@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" *ngIf="!hasSession; else withSession">
+    <span>Surveys!</span>
+    <span class="example-spacer"></span>
+    <button mat-button [routerLink]="['/sign-in']">Sign in</button>
+    <button mat-button [routerLink]="['/sign-up']">Sign up</button>
+    <button mat-button [routerLink]="['/survey']">Current surveys</button>
+</mat-toolbar>
+  
+<ng-template #withSession>
+    <mat-nav-list>
+      <mat-list-item>
+        <a matLine [routerLink]="['/sign-in']">Sign out</a>
+      </mat-list-item>
+    </mat-nav-list>  
+</ng-template>

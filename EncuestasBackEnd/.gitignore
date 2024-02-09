@@ -1,0 +1,41 @@
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+.vs/InventarioBackend/FileContentIndex
+.vs/InventarioBackend/config/applicationhost.config
+.vs/InventarioBackend/DesignTimeBuild/.dtbcache.v2
+.vs/InventarioBackend/v17/.futdcache.v1
+Inventario.Entities/obj
+Inventario.Api/obj
+Inventario.Services/obj
+Inventario.DataAccess/obj
+Inventario.Entities/obj/*
+Inventario.Api/obj/*
+Inventario.Services/obj/*
+Inventario.DataAccess/obj/*
+.vs
+.vs/*

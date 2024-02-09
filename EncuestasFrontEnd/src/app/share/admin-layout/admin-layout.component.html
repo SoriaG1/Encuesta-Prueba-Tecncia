@@ -1,0 +1,13 @@
+<mat-toolbar color="primary"> 
+    <span>User Management</span>  
+    <a mat-button [routerLink]="['/home']">Home</a>  
+    <a mat-button [routerLink]="['/users']">Users</a>  
+    <a mat-button [routerLink]="['/users']">Surveys</a>  
+    <a (click)="signOut()"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Sign Out</span></a>
+</mat-toolbar>
+
+<div class="main">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+</div>

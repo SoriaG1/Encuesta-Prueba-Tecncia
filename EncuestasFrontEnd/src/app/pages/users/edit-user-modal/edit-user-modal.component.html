@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Edit User</h1>
+<div mat-dialog-content>
+  <div>
+    <mat-form-field>
+      <mat-label>New First Name</mat-label>
+      <input matInput [(ngModel)]="data.user.firstName" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>New Last Name</mat-label>
+      <input matInput [(ngModel)]="data.user.lastName" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>New username</mat-label>
+      <input matInput [(ngModel)]="data.user.username" />
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>New Password</mat-label>
+      <input matInput [(ngModel)]="data.user.password" />
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="warn" (click)="onCloseClick()">Close</button>
+  <button mat-raised-button color="primary" (click)="putUser()">Update</button>
+</div>
